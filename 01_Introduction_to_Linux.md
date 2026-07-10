@@ -166,19 +166,21 @@ Unline Windows and macOS, Linux allows users greater control over the system and
 
 Computer
 
-|
+│
 
-|--- Windows
-|
-|--- macOS
-|
-|___ Linux
-       |
-       |--- Ubuntu
-       |--- Debian
-       |--- Fedora
-       |--- Red Hat
-       |___ Kali Linux
+├── Windows
+│
+├── macOS
+│
+└── Linux
+      │
+      ├── Ubuntu
+      ├── Debian
+      ├── Fedora
+      ├── Red Hat
+      └── Kali Linux
+
+---
 
 ## History
 
