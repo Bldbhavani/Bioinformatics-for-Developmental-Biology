@@ -73,4 +73,83 @@ NCBI
 
 This chapter will be updated as I continue learning.
 
+---
+
+# 1. What is an Operating System (OS)?
+
+## Definition
+
+An **Operating System (OS)** is system software that manages a computer's hardware and software resources. It acts as an interface between the user and the computer, allowing programs to run efficiently.
+
+Without an operating system, useres cannot easily interact with the computer or execute applications.
+
+---
+
+## Why is an Operating System Needed?
+
+An operating system is responsible for:
+
+- Managing computer memory (RAM)
+- Managing files and folders
+- Running applications
+- Communicating with hardware devices
+- Managing input and output devices
+- Providing security and user management
+
+Without an operating system, a computer cannot function in a practical way for everyday users.
+
+---
+
+## Common Operating Systems
+
+Some of the most widely used operating systems are:
+
+- Microsoft Windows
+- Linux
+- macOS
+
+Although they perform similar funtions, they differ in design, features, and intended use.
+
+---
+
+## Analogy
+
+Think of a research laboratory.
+
+| Laboratory | Computer |
+|------------|----------|
+| Scientist   | User     |
+| Laboratory  | Computer Hardware |
+| Laboratory Manager | Operating System |
+| Experiments | Software Applications |
+
+Just as a laboratory manager organises equipment, schedules experiments, and ensures everything runs smoothly, the operating system manages the computer's resources and coordinates all running programs.
+
+---
+
+## Bioinformatics Perspective
+
+Modern bioinformatics involves analysing large biological datasets such as RNA sequencing, DNA sequencing, and single-cell sequencing.
+
+An operating system provides the environment in which bioinformatics software can run efficiently.
+
+Although Windows and macOS can perform many tasks, Linux is the preferred operating system for most bioinformatics applications.
+
+---
+
+## Developmental Biology Connection
+
+If I analyse RNA sequencing data from developing embryos or implantation studies, the sequencing files are processed using bioinformatics software that typically runs on Linux.
+
+Understanding operating systems is therefore the first step towards learning computational biology.
+
+---
+
+## Key Takeaways
+
+- An Operating System manages the computer.
+- It acts as an interface between the user and the hardware.
+- It controls files, memory, software, and hardware.
+- Linux is one type of operating system commonly used in bioinformatics.
+
   
