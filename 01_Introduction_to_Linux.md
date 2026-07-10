@@ -152,4 +152,103 @@ Understanding operating systems is therefore the first step towards learning com
 - It controls files, memory, software, and hardware.
 - Linux is one type of operating system commonly used in bioinformatics.
 
+---
+
+# 2. What is Linux?
+
+## Definition
+
+Linux is a free and open-source operating system based on the Linux Kernel. It is one of the most widely used operating systems in scientific research, cloud computing, and bioinformatics.
+
+Unline Windows and macOS, Linux allows users greater control over the system and is highly customizable.
+
+---
+
+Computer
+
+|
+
+|--- Windows
+|
+|--- macOS
+|
+|___ Linux
+       |
+       |--- Ubuntu
+       |--- Debian
+       |--- Fedora
+       |--- Red Hat
+       |___ Kali Linux
+
+## History
+
+Linux was created in **1991** by ** Linus Torvalds**, a Finnish computer science student.
+
+His goal was to develop a free operating system that anyone could use, modify, and improve.
+
+Today, Linux is maintained by a global community of developers and is widely used in universities, research institutes, and technology companies.
+
+---
+
+## What is the Linux Kernel?
+
+The **Kernel** is the core component of an operating system.
+
+It acts as a bridge between software and hardware by managing:
+
+- CPU
+- Memory (RAM)
+- Storage
+- Input and Output devices
+
+Linux is built aroudn the Linux kernel.
+
+---
+
+## Why is Linux Popular?
+
+Linux is widely used because it is:
+
+- Free
+- Open-source
+- Stable
+- Secure
+- Higly customizable
+- Efficient for large-scale computing
+
+These features make Linux the preferred operating system for scientific research and bioinformatics.
+
+---
+
+## Bioinformatics Perspective
+
+Most bioinformatics software is developed for Linux because it provides:
+
+- Better performance
+- Easy atomation using shell scripts
+- Access to powerful command-line tools
+- Compatibility with high-performances coputing (HPC) clusters
+
+Many sequencing analysis pipelines are designed specifically for Linux environments.
+
+---
+
+## Developmental Biology Connection
+
+As a developmental biologist, I may analyse RNA sequencing or single-cell sequencing datasets generated from embryos, stem cells, or implantation studies.
+
+These analyses are commonly performed on Linux systems using bioinformatics software such as FastQC, STAR, HISAT2, Samtools, and R.
+
+Learning Linux is therefore an essential skill for modern developmental research.
+
+---
+
+## Key Takeaways
+
+- Linux is an operating system.
+- It was created by Linus Torvalds in 1991.
+- Linux is based on the Linux Kernel.
+- Linux is free and open-source.
+- Most bioinformatics software is designed to run on Linux.
+
   
