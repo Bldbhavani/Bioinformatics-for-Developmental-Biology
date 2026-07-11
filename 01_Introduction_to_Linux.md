@@ -628,3 +628,129 @@ the following happens:
 3. Linux locates the FastQC program.
 4. FastQC is executed.
 5. The analysis results are returned to the terminal or displayed in a window.
+
+---
+
+# 7. Why Linux is preferred for Bioinformatics
+
+## Introduction
+
+Bioinformatics involves analysing very large biological datasets generated through technologies such as DNA sequencing, RNA sequencing, single-cell sequencing, and epigenomics.
+
+Many bioinformatics software packages were originaly developed for Linux because of its performance, flexibility, and compatibility with research computing environments.
+
+---
+
+## Advantages of Linux in Bioinformatics
+
+### 1. Open source
+
+Linux is free to download, modify, and use.
+
+Researchers around the world can contribute to its development.
+
+---
+
+### 2. Stability 
+
+Linux systems can run for long periods without requiring frequent restarts.
+
+This makes them suitable for long computational analyses.
+
+### 3. Performances
+
+Linux efficiently handles:
+
+- Large sequencing datasets
+- Multiple software packages
+- High-performance computing (HPC)
+
+---
+
+### 4. Automation
+
+Linux supports shell scripting, allowing repetitive analyses to be automated.
+
+For example, analysing hundreds of sequencing samples can be completed using a single script.
+
+---
+
+### 5. Software Compatibility
+
+ Most bioinformatics software is designed primarily for Linux.
+
+ Examples include:
+
+ - FastQC
+ - STAR
+ - HISAT2
+ - BWA
+ - Bowtie2
+ - Samtools
+ - Bedtools
+ - SRA Toolkit
+
+---
+
+## Bioinformatics Workflow
+
+A typical RNA-seq workflow may look like:
+
+---
+
+NCBI /GEO
+
+↓
+
+Download Data
+
+↓
+
+FastQC
+
+↓
+
+Read Trimming
+
+↓
+
+Alignment
+
+↓
+
+Gene Counting
+
+↓
+
+Differential Expression
+
+↓
+
+Biological Interpretation
+```
+
+Most of these tools are executed in Linux
+
+```
+
+## Key Takeaways
+
+- Linux is the preferred operating system in bioinformatics.
+- It is stable, secure, efficient, and open source.
+- Most bioinformatics software is developed for Linux.
+- Linux supports large-scale biological data analysis.
+
+# 8. Quick Command Reference
+
+| Command | Purpose |
+|---------|---------|
+|`wsl --install` | Install Windows Sybsystem for Linux |
+| `wsl -l -o` | List available Linux distributions |
+| `wsl --install -d Ubuntu` | Install Ubuntu |
+| `wsl -l -v` | Show installed Linux distributions and WSL version |
+| `pwd` | Print current working directory |
+| `ls` | List files and folders |
+| `cd` | Change directory |
+|`clear` | Clear the terminal screen |
+
+
