@@ -20,13 +20,12 @@ By the end of this lesson I should be able to:
   2. What is Linux?
   3. What is Ubuntu?
   4. What is WSL?
-  5. Installing Ubuntu
-  6. PowerShell Installation Method
-  7. GUI Installation Method
-  8. Linux Terminal
-  9. Why Bioinformatics Use Linux
-  10. Summary
-  11. Practice Excercises
+  5. Installing Ubuntu using WSL
+  6. Linux Terminal
+  7. Why Bioinformatics Use Linux
+  8. Quick Command Reference
+  9. Developmental Biology connection
+  10. Practice Excercises
 
   ---
 
