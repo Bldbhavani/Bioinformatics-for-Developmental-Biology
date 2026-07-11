@@ -525,3 +525,106 @@ wsl -l -v
 | wsl  | Windows Subsystem for Linux |
 | -l | List installed distributions |
 | -v | Display WSL version |
+
+---
+
+# 6. Linux Terminal
+
+## Definition 
+
+The Linux Terminal is a command-line interface (CLI) that allows users to communicate directly with the Linux operating system by typing commands.
+
+Instead of clicking buttons and menus, users type commands to perform tasks such as navigating folders, installing software, managing files, and  running bioinformatics programs.
+
+---
+
+## Why do wer use the Terminal?
+
+The terminal allows users to:
+
+- Navigate between directories
+- Create, move and deleter files
+- Install software packages
+- Run bioinformatics tools
+- Automate repetitive tasks
+- Execute scripts and pipelines
+
+Many bioinformatics analyses are perfrormed entirely through the Linux terminal.
+
+---
+
+## What happens when I open Ubuntu?
+
+When Ubuntu starts, the terminal displays something similar to:
+
+```bash
+bhavani@SRI:~$
+```
+
+Each part has a meaning:
+
+| Part | Meaning |
+|------|---------|
+| bhavani | Username |
+| @ | "at" symbol |
+| SRI | Computer (hostname) |
+| ~ | Home directory |
+| $ | Normal user prompt |
+
+---
+
+## Example
+
+```bash
+bhavani@SRI:~$
+```
+
+This means:
+
+> User **bhavani** is currently working in the **Home directory** on the computer names **SRI**.
+
+---
+
+## Bioinformatics Perspective
+
+Almost all bioinformatics software is executed through the Linux terminal.
+
+Example include:
+
+```bash
+fastqc sample.fastq
+
+prefetch SRR390728
+
+FASTERQ-FUMP SRR390728
+
+R
+
+python
+```
+
+Learing to use the terminal is one of the most important skills in computational biology.
+
+---
+
+## Key Takeaways
+
+- The terminal is a command-line interface
+- It allows users to communicate with Linux
+- Most bioinformatics software is executed through the terminal.
+
+---
+
+When I type
+
+```bash
+fasqc sample.fastq
+```
+
+the following happens:
+
+1. I type the command in the terminal.
+2. The terminal sends the command to Linux.
+3. Linux locates the FastQC program.
+4. FastQC is executed.
+5. The analysis results are returned to the terminal or displayed in a window.
