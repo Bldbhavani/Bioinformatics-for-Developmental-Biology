@@ -22,7 +22,7 @@ By the end of this lesson I should be able to:
   4. What is WSL?
   5. Installing Ubuntu using WSL
   6. Linux Terminal
-  7. Why Bioinformatics Use Linux
+  7. Why Bioinformaticians Use Linux
   8. Quick Command Reference
   9. Developmental Biology connection
   10. Practice Excercises
