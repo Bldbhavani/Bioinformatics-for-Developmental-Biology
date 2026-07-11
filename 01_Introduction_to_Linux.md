@@ -322,4 +322,82 @@ Ubuntu provides the computational environment required to run the bioinformatics
 - Ubuntu is beginner-friendly
 - Ubuntu is widely used in bioinformatics.
 
-  
+---
+
+# 4. What is WSL (Windows Sybsystem for Linux)?
+
+## Definition
+
+Windows Subsystem for Linux (WSL) is a copatibility feature developed by Microsoft that allows users to run a Linux environment directly on Windows without installing a separate operating system or using a virtual machine.
+
+WSL enable Linux commands, applications, and tools to run alongside Windows.
+
+---
+
+## Why was WSL Developed?
+
+Many scientific, engineering, and software development tools are designed for Linux.
+
+Instead of requiring users to install Linux separately or dual boot their computers, Microsoft introduces WSL so that Linux could run directly within Windows.
+
+---
+
+## How Does WSL Work?
+
+WSL acts as a bridge between Windows and Linux.
+
+---
+
+Windows
+    │
+    ▼
+Windows Subsystem for Linux (WSL)
+    │
+    ▼
+Ubuntu
+    │
+    ▼
+Linux Terminal
+
+---
+
+When youn open Ubuntu on your Windows computer, WSL allows Ubuntu to communicate with your computer's hardware.
+
+---
+
+## Why do we use WSL?
+
+Using WSL allows us to:
+
+- Run Linux commands on Windows
+- Install bioinformatics sofware
+- Execute Linux-based workflows
+- Access Linux tools without leaving Windows
+
+This makes learning bioinformatics much easier for Windows users.
+
+---
+
+## Bioinformatics Perspective
+
+Most bioinformatics software is developed for Linux.
+
+WSL allows Windows users to install and use these tools without needing a separate Linux computer.
+
+Examples include:
+
+- FastQC
+- SRA Toolkit
+- STAR
+- HISAT2
+- Samtools
+- BWA
+
+---
+
+## Key Takeaways
+
+- WSL stands for Windows Subsytem for Linux.
+- WSL allows Linux to run inside Windows.
+- WSL is not a virtual machine.
+- WSL allows Ubuntu to run on Windows.
