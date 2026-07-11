@@ -752,4 +752,24 @@ Most of these tools are executed in Linux
 | `cd` | Change directory |
 |`clear` | Clear the terminal screen |
 
+---
+
+# 10. Developemental Biology Connection
+
+Bioinformatics plays an essential role in modern developmental in biology.
+
+Techniques such as:
+
+- RNA sequencing (RNA-seq)
+- Single cell RNA sequencing (scRNA-seq)
+- ATAC-seq
+- ChIP-seq
+- Whole Genome Sequencing
+
+Produce large datasets that require computational analysis.
+
+Most of the software used to analyse these datases is designed to run on Linux.
+
+Learning Linux therefore provides the computational foundation needed to study embryonic development, implantation, stem cell biology, tissue regeneration, and infertility.
+
 
