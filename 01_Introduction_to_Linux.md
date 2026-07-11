@@ -401,3 +401,127 @@ Examples include:
 - WSL allows Linux to run inside Windows.
 - WSL is not a virtual machine.
 - WSL allows Ubuntu to run on Windows.
+
+---
+
+# 5. Installing Ubuntu using WSL
+
+## Objective
+
+The purpose of this step is to create a Linux environment on a Windows computer that can be used for bioinformatics software and command-line tools.
+
+---
+
+## Method 1: Installation using Windows Terminal / PowerShell
+
+### Step 1 - Install WSL
+
+```powershell
+wsl --install
+```
+
+This command installs the Windows Sybsystem for Linux (WSL).
+
+### Step 2 - View Available Linux Distrubutions
+
+```powershell
+wsl -l -o
+```
+
+This command displays all Linux distributions that are available for installation.
+
+Example output may include:
+
+- Ubuntu
+- Debian
+- Kali Linux
+- Fedora
+
+---
+
+### Step 3 - Install Ubuntu
+
+```powershell
+wsl --install -d Ubuntu
+```
+
+This command installs the Ubuntu Linux distribution.
+
+After installation, restart your computer if prompted.
+
+---
+
+### Step 4 - Verify Installation
+
+```powershell
+wsl -l -v
+```
+
+This command lists all installed Linux distributions along with WSL version and current status.
+
+Example:
+
+```
+NAME     STATE     VERSION
+Ubuntu   Running   2
+```
+
+If Ubuntu appears in the list, the installation was successful.
+
+---
+
+## Command Breakdown
+
+### Command
+
+```powershell
+wsl --install
+```
+
+| Part | Meaning |
+|------|---------|
+| wsl  | Windows Subsystem for Linux |
+| --install | Install WSL |
+
+---
+
+## Command
+
+```powershell
+wsl -l -o
+```
+
+| Part | Meaning |
+|------|---------|
+| wsl | Windows Subsystems for Linux |
+| -l  | List available distributions |
+| -o  | Online distributions available for download |
+
+---
+
+### Command
+
+```powershell
+wsl --install -d Ubuntu
+```
+
+| Part | Meaning |
+|------|---------|
+| wsl  | Windows Subsystem for Linux |
+| --install | Install WSL |
+| -d | Distribution |
+| Ubuntu | Ubuntu Linux distribution |
+
+---
+
+### Command
+
+```powershell
+wsl -l -v
+```
+
+| Part | Meaning |
+|------|---------|
+| wsl  | Windows Subsystem for Linux |
+| -l | List installed distributions |
+| -v | Display WSL version |
