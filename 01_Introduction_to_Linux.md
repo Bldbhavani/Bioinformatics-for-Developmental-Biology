@@ -253,4 +253,73 @@ Learning Linux is therefore an essential skill for modern developmental research
 - Linux is free and open-source.
 - Most bioinformatics software is designed to run on Linux.
 
+---
+
+# 3. What is Ubuntu?
+
+## Definition
+
+Ubuntu is a **Linux distrubution (Linux idstro)** based on the Linux operating system. It provides a user-friendly interface and comes with pre-installed software, making Linux easy to install and use.
+
+Ubuntu is one of the most popular Linux distributions for beginners, researchers, and bioinformaticians.
+
+---
+
+## Relationship between Linux and Ubuntu
+
+Linux is the operating system (Kernel).
+
+Ubuntu is a distribution built using the Linux Kernel.
+
+---
+
+Ubuntu is **not a different operating system**. It is one version of Linux.
+
+---
+
+Ubuntu is widely used because it is:
+
+- Free and open source
+- Beginner-friendly
+- Stable and secure
+- Regularly updated
+- Compatible with most bioinformatics software
+
+For these reasons, Ubuntu is commonly recommended for bioinformatics training and research.
+
+---
+
+## Bioinformatics Perspective
+
+Many bioinformatics tools are developed and tested on Ubuntu
+
+Examples include:
+
+-FastQC
+-SRA Toolkit
+-BWA
+-Bowtie2
+-HISTA2
+-SRAR
+-Samtools
+
+Installing Ubuntu provides and environment where these tools can be installed and executed easily.
+
+---
+
+## Developmental Biology Connection
+
+During my future PhD, I may analyse sequecing datasets from embryos, stem cells, placental tissue, or infertility studies.
+
+Ubuntu provides the computational environment required to run the bioinformatics software used in these analyses.
+
+---
+
+## Key Takeaways
+
+- Ubuntu is a Linux distribution.
+- Ubuntu is based on the Linux kernel.
+- Ubuntu is beginner-friendly
+- Ubuntu is widely used in bioinformatics.
+
   
