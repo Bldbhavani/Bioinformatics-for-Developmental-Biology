@@ -25,7 +25,6 @@ By the end of this lesson I should be able to:
   7. Why Bioinformaticians Use Linux
   8. Quick Command Reference
   9. Developmental Biology connection
-  10. Practice Excercises
 
   ---
 
@@ -754,7 +753,7 @@ Most of these tools are executed in Linux
 
 ---
 
-# 10. Developemental Biology Connection
+# 9. Developemental Biology Connection
 
 Bioinformatics plays an essential role in modern developmental in biology.
 
