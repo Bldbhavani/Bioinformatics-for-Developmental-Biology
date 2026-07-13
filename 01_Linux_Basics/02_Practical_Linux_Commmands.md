@@ -805,3 +805,177 @@ ls
 ```
 
 ---
+
+# Practical Session 5 - Changing Directories (`cd`)
+
+# Objective
+
+Learn how to move form on directory (folder) to another in Linux.
+
+---
+
+# Background
+
+The `cd` comamnd changes my current working directory.
+
+Instead of working in my Home directory all the time, I can move into my project folder.
+
+`cd` stands for **Change Directory**.
+
+ ---
+
+ ## Action
+
+ Type:
+
+ ```bash
+pwd
+```
+
+Press **Enter**.
+
+---
+
+## Expected Output
+
+```bash
+/home/bhavani
+```
+
+## Why am I doing this?
+
+Before changing directories, I should know my current location.
+
+---
+
+Step 2 - View available foldersw
+
+## Action
+
+Type:
+
+```bash
+ls
+```
+
+Press **Enter**.
+
+---
+
+## Expected Output
+
+Example:
+
+```bash
+Emrbyo_RNAseq R
+```
+
+---
+
+## What does this command do?
+
+Moves me from my current directory into the `Embryo_RNAseq` folder.
+
+The command does not create or copy anything.
+
+It simply changes my working location.
+
+---
+
+# Step 4 - Verify my new location
+
+## Action
+
+Type:
+
+```bash
+pwd
+```
+
+Press **Enter**.
+
+---
+
+## Expected output
+
+```bash
+/home/bhavani/Embryo_RNAseq
+```
+
+## What does this output mean?
+
+I am now working inside my research project.
+
+Every new folder and file I create will now be stored here unless I move somewhere else.
+
+---
+
+## Why is this important?
+
+Linux always performs commands in the current directory.
+
+If I am in the wrong location, I may accidentally create files in the wrong place or analyse the worng dataset.
+
+---
+
+## Bioinformatics Example
+
+Before downloading sequencing data, I should first enter my project folder.
+
+```bash
+cd Embryo_RNAseq
+```
+
+Then all download files will remain organised inside this project.
+
+---
+
+## Developmental Biology Example
+
+Suppose I am studying embryo implantation.
+
+I first entr:
+
+```bash
+cd Emrbyo_RNAseq
+```
+
+Everything related to ths study-including RNA-seq data, quality control reports, alignments, and figures will be stored inside this project.
+
+---
+
+## Common Beginner Mistakes
+
+### Mistake 1
+
+Typing the folder name incorrectly.
+
+Example:
+
+```bash
+cd embryo_rnaseq
+```
+
+Linux is case-sensitive.
+
+Correct:
+
+```bash
+cd Embryo_RNAseq
+```
+
+---
+
+### Mistake 2
+
+Trying to enter a folder that does not exist.
+
+Linux will display an error.
+
+Always check using:
+
+```bash
+ls
+```
+
+---
