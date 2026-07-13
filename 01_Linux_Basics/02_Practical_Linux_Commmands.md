@@ -221,3 +221,36 @@ Everything begins inside Ubuntu.
 - Understand the Linux prompt
 - Explain what ~ means
 - Explain what $ means
+
+---
+
+## My Experience
+
+**Date:** 13/Jul/2026
+**Time:** 11:03 am
+
+---
+
+### Did it work? 
+Yes
+
+---
+
+### Did I encounter any errors?
+No
+
+---
+
+### What did I learn today?
+
+Every bioinofrmatics analysis begins inside Ubuntu.
+
+Before runnint tools such as FastQC, SRA, Toolkit, HISAT2, STAR, or R, I must first enter the Linux environment correctly.
+
+---
+
+### Confidence level
+
+⭐⭐⭐⭐⭐ (5/5)
+
+I can confidently open Ubuntu without referring to the notes.
