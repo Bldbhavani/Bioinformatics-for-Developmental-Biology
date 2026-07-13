@@ -979,3 +979,56 @@ ls
 ```
 
 ---
+
+# Practical Session 6 - Organising a Bioinformatics Project
+
+# Objective
+
+Learn how to organise a bioinformatics project by creating meaningful directories.
+
+---
+
+# Background
+
+Research projects contain many different types of files.
+
+Keeping them organised makes easier, prevents mistakes, and improves reproducibility.
+
+Instead of storing in one folder,  each stage of the analysis should have its own directory.
+
+---
+
+# Step 1 - Confirm I am inside my project
+
+Type:
+
+```bash
+pwd
+```
+
+Expected output:
+
+```bash
+/home/bhavani/Emrbyo_RNAseq
+```
+
+---
+
+# Step 2 - Create project folders
+
+Type the following commands one at a time:
+
+```bash
+mkdir 01_Raw_Data
+mkdir 02_Quality_Control
+mkdir 03_Trimmed_Data
+mkdir 04_Alignment
+mkdir 05_Counts
+mkdir 06_Differential_Expression
+```
+
+## What does this do?
+
+Creates a professional folder structure for an RNA-seq project.
+
+Each folder represents one stage of the bioinformatics workflow.
