@@ -13,95 +13,211 @@ Unlike a normal Command list, each command includes:
 
 ---
 
-# Practival Session 1 - Linux File System
-
-## Learning Objectives
-
-By the end of this practical session I should be able to:
-
-- Navigate through Linux directories
-- Identify my current working directory
-- Create folders
-- Create files
-- Copy, move and delete files
-- Understand the Linux file hierarchy
-- Organise a bioinformatics project
+# Practival Session 1 - Opening Ubuntu and Understanding the Linux Environment
 
 ---
 
-## Understanding the Linux File System
+# Objective
 
-Linux stores everything inside one main directory called the **Root Directory**.
-
-```bash
-/
-```
-
-Every file and directory originates from the root.
-
-Example:
-
-```
-/
-├── home
-├── usr
-├── bin
-├── etc
-├── tmp
-└── var
-```
+Open Ubuntu successfully and understand the Linux environment before running any bioinformatics software.
 
 ---
 
-## Home Directory
+# Background
 
-Each Linux user has a personal workspace.
+Ubuntu is a Linux operating system.
 
-Example:
+Throughout this bioinformatics course, every software tool (FastQC, SRA Toolkit, HISAT2, FeatureCounts, R etc.) will be executed inside Ubuntu.
 
-```bash
-/home/bhavani
-```
+Therefore, before learning any commands, I must know how to enter the Linux environment correctly.
 
-Shortcut:
+---
 
-```bash
-~
-```
+# Step 1 - Turn on the computer
 
-Everything related to my bioinformatics projects will normally be stored here.
+## Action
 
-Example:
+Swith on the laptop.
 
-```
-/hone/bhavani/Embryo_Project
-```
+Log in to Windows.
+
+---
+
+##  What does this do?
+
+Starts Windows.
+
+Ubuntu runs inside Windows using WSL (Windows Subsystem for Linux).
+
+Therefore Windows must start first.
 
 ---
 
 ## Why is this important?
 
-Before running any bioinformatics software, I should know where my files are stored.
-
-A well-organised directory structure makes projects easier to analyse and reproduce.
+Ubuntu cannot run until Windows has started.
 
 ---
 
-## Developmental Biology Example
+# Step 2 - Open Ubuntu
 
+## Action
+
+Click the Windows Start Menu.
+
+Search
+
+Ubuntu
+
+Click Ubuntu.
+
+---
+
+## What does this do?
+
+Launches the Ubuntu Linux terminal.
+
+Linux is now preparing my working environment.
+
+---
+
+## Why is this important?
+
+Every bioinformatics analysis will be performed here.
+
+# Step 3 - Enter password
+
+## Action
+
+Type my Ubuntu password.
+
+Press Enter.
+
+---
+
+## What does this do?
+
+Logs into my Linux user account.
+
+---
+
+## Important
+
+Linux Does NOT display characters while typing the password.
+
+This is ocmpletely normal.
+
+Simply type the password and press Enter.
+
+---
+
+# Step 4 - Wait for the prompt
+
+Expected screen
+
+```bash
+bhavani@SRI:~$
 ```
-Embryo_Project/
 
-├── Raw_FASTQ/
+---
 
-├── FastQC/
+## What does this mean?
 
-├── Alignment/
+bhavani
 
-├── Counts/
+↓
 
-├── Results/
+My username
 
-└── Figures/
-```
+---
 
+SRI
+
+↓
+
+My computer name (host name)
+
+---
+
+~
+
+↓
+
+My Home Directory
+
+---
+
+$
+
+↓
+
+Linux is waiting for my command.
+
+Congratulations!
+
+Ubuntu is now ready.
+
+---
+
+# WHy is Ubuntu used in Bioinformatics?
+
+Most bioiformatics software is developed for Linux.
+
+Example include: 
+
+- FastQC
+- SRA Toolkit
+- HISAT2
+- Bowtie2
+- STAR
+- Samtools
+- FeatureCounts
+- BCFtools
+
+Learning Ubuntu means I can use the same tools that researchers use in universities and research institutes.
+
+---
+
+# Developmental Biology Connection
+
+Suppose I am studying embryo implantation using RNA sequecing.
+
+My workflow might be:
+
+Ubuntu
+
+↓
+
+Download sequencing data
+
+↓
+
+Quality Control
+
+↓
+
+Alignment
+
+↓
+
+Gene counting
+
+↓
+
+Differential Expression
+
+↓
+
+Identify genes involved in implantation failure
+
+Everything begins inside Ubuntu.
+
+---
+
+# At this stage I should be able to 
+
+- Open Ubuntu
+- Enter my password
+- Understand the Linux prompt
+- Explain what ~ means
+- Explain what $ means
