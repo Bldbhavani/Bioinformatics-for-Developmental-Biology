@@ -1,4 +1,4 @@
-# Linuxd Practical Commands
+# Linux Practical Commands
 
 This file contains the practical Linux commands I learned during the Bioinformatics workshop.
 
@@ -533,4 +533,173 @@ This is because I am using Ubuntu inside WSL, not a full Ubuntu desktop installa
 
 WSL starts with a very minimal Linux environment. The only thing I've created so far is the R directory.
 
+# Practical Session 4 - Creating My First Research Project (mkdir)
+
+# Objective
+
+Create my first developmental bioinformatics porject directory.
+
+--- 
+
+# Background
+
+A directory (folder) is used to organise files.
+
+Every research project should have its own directory.
+
+Keeping projects organised makes analyses easier to reproduce and prevents files from becoming mixed together.
+
+The `mkdir` command stands for **Make Directory**.
+
+---
+
+# Step 1 - Cehck my current location
+
+Type 
+
+```bash
+pwd
+```
+
+---
+
+## Why?
+
+To confirm I am inside my Home directory before creating a new project.
+
+---
+
+# Step 2 - View existing folders
+
+Type 
+
+```bash
+ls
+```
+
+## Why?
+
+To check whether my project already exists.
+
+---
+
+# Step 3 - Create my project
+
+```bash
+mkdir Embryo_RNAseq
+```
+
+Press Enter.
+
+---
+
+## What does this do?
+
+Creates a new folder named **Embryo_RNAseq** inside my Home directory.
+
+---
+
+## Why is this important?
+
+Every bioinformatics project should have its own organised workspace.
+
+---
+
+# Viewing Linux files in Windows
+
+Sometimes I may want to visually check whether a file or folder has been created.
+
+Since I am using **Ubuntu through Windows Sybsystem for Linux (WSL)**, I can open my current Linux directory directly in Windows File Explorer.
+
+---
+
+# Step 1 - Confirm my current directory
+
+Type:
+
+```bash
+pwd
+```
+
+Example output:
+
+```bash
+/home/bhavani
+```
+
+## Why am I doing this?
+
+This tells me which Linux folder I am currently working in.
+
+---
+
+# Step 2 - Open the current directory in Windows
+
+Type:
+
+```bash
+explorer.exe .
+```
+
+Press ** Enter**.
+
+---
+
+## What does this command do?
+
+- `explorer.exe` launches Windows file explorer.
+- `.` (dot) represents the **current directory**.
+
+Together, this command opens the folder I am currently working in.
+
+---
+
+## Expected Result
+
+Windows File Explorer opens and displays the contents of my Linux Home directory.
+
+Example:
+
+```text
+Embryo_RNAseq
+R
+.config
+.cache
+.local
+```
+
+## Why is this useful?
+
+- Verify that a new folder has been created.
+- View Linux files using a familiaar windows interface.
+- Easily copy or inspect files.
+- Confirm that my project structures is correct.
+
+---
+
+## When will I use this?
+
+After creating new folders using:
+
+```bash
+mkdir
+```
+
+or downloading datasets, I can use:
+
+```bash
+explorer.exe .
+```
+
+to visually confirm that everything is in the correct location.
+
+---
+
+## Important Note
+
+This command works because I am using **Ubuntu through WSL**.
+
+It is **not a standard Linux command** and will not work on a normal Ubuntu installation.
+
+---
 
