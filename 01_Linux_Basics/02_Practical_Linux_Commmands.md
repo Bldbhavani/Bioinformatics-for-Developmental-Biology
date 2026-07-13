@@ -458,24 +458,79 @@ My Output:
 /home/bhavani
 ```
 
-# My experience
+---
 
-**Date:** 13-07-2026
+# Step 2 - List the contents
 
-**Time:** 11:35 am
+## Action
 
-### Did it work?
+Type:
 
-Yes
+```bash
+ls
+```
 
-### Did I encounter any errors?
+Press **Enter**.
 
-No
+---
 
-### What did I learn today?
+## What does this command do?
 
-Logging into Ubuntu  and checking which directory I am in
+Limux displays all files and folders inside my current directory.
 
-### Confidence level
+---
 
-⭐⭐⭐⭐⭐
+## Expected output
+
+The output will vay depending on what is stored in my Home directory.
+
+Example:
+
+```bash
+Desktop
+Documents
+Downloads
+Music
+Pictures
+Videos
+```
+
+## Why is this important?
+
+Before creating a new project, I should know what folders already exists.
+
+This prevents duplicate folders and helps keep my work organised.
+
+---
+
+## Bioinformatics Example
+
+Before downloading RNA-seq data, I can use:
+
+```bash
+ls
+```
+
+to check whether a project folder already exists.
+
+---
+
+## Developmental Biology Example
+
+```text
+Embryo_RNAseq
+```
+
+I can use `ls` to verify whether I haved already created it.
+
+---
+
+## What did I see when I entered command `ls`?
+
+R
+
+This is because I am using Ubuntu inside WSL, not a full Ubuntu desktop installation.
+
+WSL starts with a very minimal Linux environment. The only thing I've created so far is the R directory.
+
+
