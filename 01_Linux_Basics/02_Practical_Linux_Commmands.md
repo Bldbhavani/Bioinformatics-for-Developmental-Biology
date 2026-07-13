@@ -703,3 +703,105 @@ It is **not a standard Linux command** and will not work on a normal Ubuntu inst
 
 ---
 
+## Expected Output
+
+After pressing **Enter**, Linux usually does **not** display any message.
+
+Example:
+
+```bash
+bhavani@SRI:~$ mdkir Emrbyo_RNAseq
+bhavani@SRI:~$
+```
+
+---
+
+## What does this mean?
+
+Linux successfully created the folder.
+
+Unlike many Windows programs, Linux normally remains silent when a command executes successfully.
+
+No output usually means **success**.
+
+---
+
+## How do I know it worked?
+
+Type:
+
+```bash
+ls
+```
+
+Example output:
+
+```bash
+Embryo_RNAseq R
+```
+
+If `Embyro_RNAseq` appears, the folder has been created successfully.
+
+---
+
+## Why is this important?
+
+Creating separate project folders keeps research organised.
+
+Each bioinformatics project should have its own workspace to avoid mixing files from different analyses.
+
+---
+
+## Bioinformatics Example
+
+Before starting a new RNA-seq analysis, I can create a dedicated project folder:
+
+```bash
+mkdir Embryo_RNAseq
+```
+
+All files related to this project will be stored inside this directory.
+
+---
+
+## Developmental Biology Example
+
+Suppose I am studying gene expression during embryo implantation.
+
+```text
+Embryo_RNAseq
+```
+
+This folder will contain all sequencing data, quality control results, alignment files, gene counts, figures, and final resutls for this study.
+
+---
+
+## Common Beginner Mistakes
+
+### Mistake 1
+
+Trying to create a folder that already exists.
+
+Example:
+
+```bash
+mkdir Embryo_RNAseq
+```
+
+Linux will display:
+
+```text
+mkdir: cannot directory `Emrbyo_RNAseq`: File exists
+```
+
+### Mistake 2
+
+Forgetting to check whether the folder was created.
+
+Always verify using:
+
+```bash
+ls
+```
+
+---
