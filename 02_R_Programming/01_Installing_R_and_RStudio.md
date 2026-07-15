@@ -144,3 +144,35 @@ The installation is successful if:
 | Programming language | Integrated Development Environment (IDE) |
 | Executes code | Provides an interface for writing and managing code |
 | Can run without RStudio | Cannot run without R |
+
+## Verification
+
+### Check whether R is installed
+
+Run:
+
+```bash
+R --version
+```
+
+If R is installed, the version information will be displayed.
+
+---
+
+### Check whether RStudio is installed
+
+Run:
+
+```bash
+rstudio
+```
+
+If RStudio is installed, the RStudio application will open.
+
+If you receive:
+
+```text
+command not found
+```
+
+then RStudio is not installed.
