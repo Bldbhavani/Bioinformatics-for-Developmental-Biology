@@ -255,3 +255,61 @@ Why is this important?
 Real bioinformatics datasets contain thousands of values.
 
 Instead of creating thousands of variables, R stores them together inside vectors.
+
+---
+
+# R Cheat Sheet
+
+## Variables
+
+```r
+x <- 10
+```
+
+---
+
+## Working Directory
+
+```r
+getwd()
+```
+
+---
+
+## Average
+
+```r
+mean()
+```
+
+---
+
+## Sum
+
+```r
+sum()
+```
+
+---
+
+## Maximum
+
+```r
+max()
+```
+
+---
+
+## Minimum
+
+```r
+min()
+```
+
+---
+
+## Vector
+
+```r
+c()
+```
