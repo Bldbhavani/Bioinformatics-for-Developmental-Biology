@@ -84,3 +84,174 @@ pwd
 ```
 
 The full path of the folder where R is currently reading and writing files.
+
+---
+
+## Variables
+
+Variables allow us to store information in memory so that it can be reused later in the program.
+
+Instead of typing the same value repeatedly, we can save it with a meaningful name.
+
+Example:
+
+```r
+a <- 10
+```
+
+To display the value stored in the variable:
+
+```r
+a
+```
+
+Output:
+
+```r
+a
+```
+
+R displayed the value stored inside the variable.
+
+### Why is this useful?
+
+Variable make programs easier to read and modify.
+
+Instead of remembering numbers, I can use meaningful names such as:
+
+```r
+gene_expression
+emrbyo_count
+control_emrbyos
+```
+
+Which makes the code much easier to understand.
+
+---
+## Different Types of Data
+
+A variable can store different kinds of information.
+
+### Integer / Numeric
+
+```r
+a <- 10
+```
+
+### Decimal
+
+```r
+a <- 2.5
+```
+
+### Text (Character)
+
+```r
+a <- "Bhavani"
+```
+
+Text must always be enclosed inside quotation marks.
+
+---
+
+## Mistakes I made
+
+I typed:
+
+```r
+a <- Bhavani
+```
+
+Error:
+
+```r
+Error: object 'Bhavani' not found
+```
+
+Why did this happen?
+
+R interpreted 'Bhavani' as the name of another variable instead of text.
+
+How I fixed it:
+
+```r
+a <- "Bhavani"
+```
+
+Lesson Learned:
+
+Text values must always be enclosed in quotation marks.
+
+---
+
+### Mistake 2
+
+I typed:
+
+```r
+total_embryos
+```
+
+before creating it.
+
+Error:
+
+```r
+Error: Object 'total_embryos' not found
+```
+
+Why did this happen?
+
+The variable had not yet been created.
+
+How I fixed it:
+
+```r
+total_embryos <- crontrol_emrbyos + treated_embryos
+```
+
+Lesson Learned:
+
+A variable must exist before it can be used.
+
+---
+
+## Built-in Functions
+
+Functions allow R to perform operations automatically.
+
+Functions I learned today:
+
+| Function | Purpose |
+| 'sqrt()' | Square root |
+| 'mean()' | Calculate average |
+| 'sum()' | Add values |
+| 'max()' | Largest value |
+|'min()' | Smallest value |
+| 'length()' | Count the number of values |
+
+---
+
+## My First Vector
+
+Command:
+
+```r
+gene_expression <- c(gene_A, gene_B, gene_C)
+```
+
+Output:
+
+```r
+[1] 150 220 275
+```
+
+What is `c()`?
+
+The `C()` function combines multiple values into a single object called a **vector**.
+
+Why is this important?
+
+Real bioinformatics datasets contain thousands of values.
+
+Instead of creating thousands of variables, R stores them together inside vectors.
