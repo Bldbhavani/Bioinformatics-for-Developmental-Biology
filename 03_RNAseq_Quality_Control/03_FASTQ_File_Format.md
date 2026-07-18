@@ -310,3 +310,172 @@ PCR cannot amplify RNA directly.
 DNA polymerase only works on DNA.
 
 Therefore, RNA must first be converted into cDNA before further processing.
+
+---
+
+# Step 3 - Fragmentation
+
+## Why is Fragmentation Necessary?
+
+Messenger RNA molecules are often much longer than what most sequencing machines can read in a single run.
+
+For example:
+
+Some mRNA molecules may be several thousand nucleotides long.
+
+However, all Illumina sequencing machine typically reads only:
+
+- 75 bp
+- 100 bp
+- 150 bp
+- 250 bp
+
+(depending on the sequencing kit)
+
+Therefore, the RNA or cDNA must first be broken into smaller fragments before sequencing.
+
+This process is called **fragmentation**.
+
+---
+
+## What happens during fragmentation?
+
+Large RNA or cDNA molecules are randomly broken into smaller pieces.
+
+Example:
+
+Long RNA molecule
+
+↓
+
+--------------------------------------------------------------
+
+↓
+
+--------------
+
+---------
+
+-----------------
+
+-----------
+
+--------
+
+These smaller fragments are suitable for sequencing.
+
+---
+
+## Methods of fragmentation
+
+Several methods can be used:
+
+### 1. Enzymatic fragmentation
+
+Special enzymes cut RNA or cDNA into smaller fragments.
+
+Advantages:
+
+- Easy
+- Highly controlled
+
+---
+
+### 2. Chemical Fragmentation
+
+Heat and chemicals break RNA into smaller pieces.
+
+Common in many RNA-seq protocols.
+
+---
+
+### 3. Mechanical fragmentation
+
+Special intruments use ultrasound or physical force.
+
+Example:
+
+Covaris sonication
+
+Mostly used for DNA sequencing libraries.
+
+---
+
+## Why is fragment size important?
+
+If fragment are too long:
+
+- The sequencing machine cannot read the entire fragment.
+
+If fragments are too short:
+
+- Alignment become more difficult.
+- Some reads may map to multiple locations.
+
+Therefore, library preparation aims to produce fragments within an optimal size range.
+
+Typical fragment sizes:
+
+200-500bp
+
+---
+
+# Developmental Biology Connection
+
+Embryonic samples often contain very small amounts of RNA.
+
+Therefore, fragmentation must be carefully optimized.
+
+Over-fragmentation may reduce the amount of usable RNA.
+
+Under-fragmentation may decrease sequencing efficiency.
+
+Maintaining an appropriate fragment size helps ensure reliable downstream gene expression analysis in embryonic tissues.
+
+---
+
+# Step 4 - End repair and A-tailing
+
+After fragmentation, the end of DNA fragments are not always suitable for attaching sequencing adapters.
+
+Some fragments may have:
+
+- uneven ends
+- overhangs
+- blunt ends
+
+Before adapters can be attached, the fragment ends must be repaired.
+
+This process is called **End Repair**.
+
+---
+
+## What is End Repair?
+
+Special enzymes modify the fragment ends so that every fragment has compatible ends.
+
+This create uniform DNA fragments for the next step.
+
+---
+
+# A-Tailing
+
+After end repair, one extra Adenine (A) nucleotide is added to the 3' end of every DNA fragment.
+
+Example:
+
+Before:
+
+ATCGTAGCT
+
+↓
+
+After A-tailing:
+
+ATCGTAGCTA
+
+This additional "A" makes it easier for sequencing adapters with a complementary "T" overhang to attach efficiently.
+
+This step improves the accuracy and efficiency of adapter ligation.
+
+---
