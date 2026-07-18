@@ -24,3 +24,33 @@ It contains two important types of information for every sequencing read:
 Unlike a FASTA file, FASTQ fiels include quality information that helps determine how reliable each base cell is.
 
 FASTQ is therefore the universal starting point for almost every RNA-seq analysis workflow.
+
+---
+
+# Where does a FASTQ file ocme from?
+
+A FASTQ file is produced after an RNA sequencing experiment.
+
+The complete process is:
+
+Biological Sample
+
+↓
+
+RNA Extraction
+
+↓
+
+Library Preparation
+
+↓
+
+Sequencing Machine
+
+↓
+
+FASTQ File
+
+↓
+
+Bioinformatics Analysis
