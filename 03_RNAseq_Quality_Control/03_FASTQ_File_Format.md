@@ -198,3 +198,115 @@ Poor RNA quality can lead to:
 - Unreliale biological conclusions.
 
 Good RNA quality is the foundation of a successful RNA-seq experiment.
+
+---
+
+# Library Preparation
+
+## What is Library Preparation?
+
+Library preparation is the process of converting purified RNA into a form that can be read by a sequencing machine.
+
+Sequencing machines cannot directly sequence most RNA moleculaes in a standard Illumina RNA-seq workflow.
+
+Therefore, the extracted RNA must first be converted into a sequencing library.
+
+The final product is called the **sequencing library**.
+
+This library contains milliions of DNA fragments that are ready to be loaded onto the sequencing machine.
+
+---
+
+## Why is Library Preparation Necessary?
+
+The RNA extracted from cells:
+
+- is fragile
+- varies greatly in length
+- cannot usually be loaded directly into an Illumina sequencer
+
+Library preparation makes every fragment compatible with sequencing.
+
+Without library preparation, RNA sequencing cannot be performed.
+
+---
+
+# Step 1 - RNA selection
+
+After RNA extraction, not all RNA molecules are useful for RNA sequencing.
+
+A typical cell contains:
+
+- Messenger RNA (mRNA)
+- Ribosomal RNA (rRNA)
+- Transfer RNA (tRNA)
+- Long non-coding RNA (lncRNA)
+- Small RNAs
+
+However, ribosomal RNA makes up about 80-90% of total RNA.
+
+If sequenced directly, most reads would come from rRNA instead of the transcripts we are interested in.
+
+Therefore, library preparation ususally begins with one of two strategies:
+
+* mRNA enrichment
+or
+* rRNA depletion
+
+---
+
+## mRNA Enrichment
+
+Messenger RNA contains a long poly(A) tail at its 3' end.
+
+Special magnetic beads coated with oligo(dT) bind specifically to these poly(A) tails.
+
+This allows mRNA to be separated from other RNA molecules.
+
+Advantages:
+
+- High proportion of protein-coding genes
+- Less sequencing wasted on rRNA
+- Commonly used for eukaryotic samples
+
+---
+
+## rRNA Depletion
+
+Instead of selecting mRNA, another approach removes ribosomal RNA.
+
+Special probes bing to rRNA molecules, which are then removed.
+
+The remaining RNA is sequenced.
+
+Advantages:
+
+- Captures coding and many non-coding RNAs
+- Useful for degraded RNA
+- Suitable for some clinical samples and bacterial RNA studies
+
+---
+
+# Step 2 - Reverse Transcription
+
+After RNA selection, the RNA is converted into complementay DNA (cDNA).
+
+This reaction is catalyzed by the enzyme:
+
+Reverse Transcriptase
+
+RNA
+
+↓
+
+Reverse Transcriptase
+
+↓
+
+Complementary DNA (cDNA)
+
+PCR cannot amplify RNA directly.
+
+DNA polymerase only works on DNA.
+
+Therefore, RNA must first be converted into cDNA before further processing.
