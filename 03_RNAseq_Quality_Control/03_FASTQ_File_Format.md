@@ -54,3 +54,147 @@ FASTQ File
 ↓
 
 Bioinformatics Analysis
+
+---
+
+# RNA Extraction
+
+## Why is RNA Extraction Necessary?
+
+RNA sequencing measures RNA molecules present inside cells.
+
+However, RNA is enclosed within the cell and cannot be analysed directly.
+
+The first laboratory step is therefore to extract high-quality RNA from the biological sample while preventing degradation.
+
+Without good-quality RNA, reliable RNA sequencing is impossible.
+
+---
+
+## What is RNA?
+
+RNA (Ribonucleic Acid) is a molecule that carries genetic information from DNA and is used to produce proteins.
+
+Unline DNA, RNA is:
+
+- Single stranded
+- Less stable
+- Easily degraded by RNase enzymes
+
+Because RNA is fragile, careful handling is required throughout the experiment.
+
+---
+
+# Biological Sample
+
+RNA can be extracted from many different biological materials.
+
+Examples include:
+
+- Whole embryos
+- Blastocysts
+- Endometrium
+- Placenta
+- Stem cells
+- Cell cultures
+- Blood
+- Tunor tissue
+
+The choice of sample depends on the biological question being investigated.
+
+# Step 1 - Cell Lysis
+
+The first laboratory step is to break open the cells.
+
+This process is called cell lysis.
+
+Purpose:
+
+Release RNA from inside the cells.
+
+Reagents commonly used:
+
+- TRIzol
+- Lysis buffer
+- Guanidinium thiocyanate
+
+These chemicals:
+
+- Break cell membranes
+- Destroy proteins
+- Inactivate RNAase enzymes
+
+---
+
+# Why are RNases Dangerous?
+
+RNases are enzymes that naturally break down RNA.
+
+They are present:
+
+- On human skin
+- On laboratory benches
+- In dust
+- In contaminated pipettes
+
+Even a tiny amount of RNase can destroy an RNA sample.
+
+Therefore researchers:
+
+- Wear gloves
+- Use RNase-free tubes
+- Use RNase-free water
+- Clean surfaces with RNase-removing solutions
+
+---
+
+# RNA Purification
+
+After cell lysis:
+
+RNA must be separated from:
+
+- DNA
+- Proteins
+- Lipids
+- Cell debris
+
+Common methods:
+
+1. TRIzol extraction
+
+2. Silica spin-column kits
+
+Both methods produce purified RNA suitable for downstream applications.
+
+---
+
+# RNA Quality Assessment
+
+After RNA extraction, researchers evaluate RNA quality.
+
+This includes:
+
+- RNA concentration
+- RNA purity
+- RNA integrity
+
+Common instruments:
+
+- NanoDrop
+- Qubit
+- Agilent Bioanalyzer
+
+---
+
+# Why Does RNA Quality Matter?
+
+Poor RNA quality can lead to:
+
+- Missing transcripts
+- Biased gene expression
+- Failed library preparation
+- Poor sequencing quality
+- Unreliale biological conclusions.
+
+Good RNA quality is the foundation of a successful RNA-seq experiment.
