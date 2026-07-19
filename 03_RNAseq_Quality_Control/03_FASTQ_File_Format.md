@@ -479,3 +479,333 @@ This additional "A" makes it easier for sequencing adapters with a complementary
 This step improves the accuracy and efficiency of adapter ligation.
 
 ---
+
+# Step 5 - Adapter Ligation
+
+## What is Adapter Ligation?
+
+After fragmentation and A-tailing, the DNA fragments are still not ready for sequencing.
+
+Although the fragments contain valuable biological information, the sequencing machine cannot recognize them directly.
+
+Special DNA sequences called **sequencing adapters** are attached to both ends of every DNA fragment.
+
+This process is called **adapter ligation**.
+
+The enzyme **DNA ligase** joins the adapters to the DNA fragments by forming phosphodiester bonds.
+
+Without adapters, the sequencing machine cannot identify, amplify, or sequence the DNA fragments.
+
+---
+
+## What are sequencing adapters?
+
+Sequencing adapters are short, synthetic DNA sequences that are attached to both ends of every DNA fragment during library preparation.
+
+These adapters are not part of the original biological sample.
+
+Instead, they are artificially designed sequences added specifically for the sequencing proceess.
+
+Every DNA fragment in the sequencing library receives an adapter at each end.
+
+---
+
+## Why are adapters necessay?
+
+Sequencing adapters perform several essential functions.
+
+They:
+
+- allow DNA fragments to attach to the flow cell
+- enable amplification during cluster generation
+- provide primer binding sites for sequencing
+- allow the sequencing machine to recognize each DNA fragment
+- can contain barcode (index) sequence for mulipleing
+
+Without sequencing adapters, the DNA fragments cannot be sequenced.
+
+---
+
+## DNA ligase
+
+DNA ligase is the enzyme responsible for joining sequencing adapters to DNA fragments.
+
+It forms phosphodiester bonds between the adapter and the DNA fragment.
+
+This creates a continuous DNA molecules that is stable for sequencing.
+
+---
+
+## Developmental biology connection
+
+Emrbyonic samples often contain very small amounts of RNA.
+
+Since only a limited amount of cDNA is available, efficient adapter ligation is essential.
+
+Poor adapter ligation can reduce the number of usable sequencing reads and decrease the overall quality of gene expression analysis.
+
+---
+
+# Step 6 - Library PCR Amplification
+
+## What is Library PCR amplificaiton?
+
+After sequencing adapters have been attached to the DNA fragments, the sequencing library still contains a small amount of DNA.
+
+For most RNA-seq experiments, this amount is not sufficient for sequencing.
+
+Therefore, the library is ampliied using the polymerase chain reaction (PCR).
+
+This process is called **Library PCR Amplification**.
+
+PCR creates millions of copies of each DNA fragment, producing enough material for sequencing.
+
+---
+
+## How does PCR amplification work?
+
+PCR consists of repeated cycles that copy DNA fragments.
+
+Each cycle has three main steps:
+
+### 1. Denaturation
+
+The double-stranded DNA is heated to approximately 95°C.
+
+This separates the two DNA strands.
+
+---
+
+### 2. Annealing
+
+The temperature is lowered.
+
+Primers bind to the adapter sequences attached to the DNA fragements.
+
+---
+
+### 3. Extension
+
+DNA polymerase synthesizes a new DNA strand using each original strand as a template.
+
+At the end of one PCR cycle, each DNA molecule has been copied.
+
+Repeating this process over multiple cycles produces millions of copies of the sequencing library.
+
+## Why do PCR primers bind to adapters?
+
+The original DNA fragements have different biological sequences.
+
+Designing unique primers for every fragment would be impossible.
+
+Instead, all DNA fragments recieve the same sequencing adapters during adapter ligation.
+
+PCR primers are designed to bind to these common adapter sequences.
+
+As a result, every DNA fragment in the sequencing library cab be amplified using the same pair of primers.
+
+---
+
+## How many PCR cycles are used?
+
+Most RNA-seq library preparation protocols use a limited number of PCR cycles.
+
+Typical range:
+
+10-15 cycles
+
+The exact number depends on:
+
+- RNA quality
+- RNA quantity
+- Library preparation kit
+- Experimental design
+
+Using fewer cycles helps reduce amplification bias.
+
+---
+
+## What is PCR bias?
+
+PCR does not always amplify every DNA fragment equally.
+
+Some fragments amplify more efficiently than others.
+
+As a result, certain sequences become overrepresented in the final sequencing library.
+
+This unequal amplification is called **PCR Bias**.
+
+PCR bias can affect the accuracy of gene expression measurements if not carefully controlled.
+
+---
+
+# Step 7 - Library Quality Control (Library QC)
+
+## What is library quality control?
+
+After library preparation and PCR amplification, the sequencing library must be carefully evaluated before sequencing.
+
+This evaluation is called **library quality control(Library QC)**.
+
+Library QC ensures that the sequencing library:
+
+- has the correct fragment size
+- has sufficient DNA concentration
+- is free from contamination
+- contains properly ligated adapters
+- is suitable for sequencing
+
+If the library fails quality control, it should not be sequenced because poor-quality libraries produce unreliable sequencing data.
+
+---
+
+## Why is Library QC necessary?
+
+Sequencing is expensive.
+
+Running a poor-quality library wastes:
+
+- sequencing reagents
+- instrument time
+- money
+- biological samples
+
+Quality control helps identify problems before sequencing begins.
+
+This saves both time and resources while improving the reliablility of downstream analysis.
+
+---
+
+## Parameters evaluated during library QC
+
+Scienctists usually examine:
+
+1. Library concentration
+
+2. Fragment size distribution
+
+3. Adapter dimers
+
+4. Library purity
+
+5. Overall library integrity
+
+Each parameter provides information about whether the library is suitable for sequencing.
+
+---
+
+# 1. Library Concentration
+
+## What is library concentration?
+
+Library concentration refers to the amount of DNA present in the sequencing library.
+
+If the concentration is too low:
+
+- Insufficient DNA reaches the sequencing machine
+- Fewer sequencing clusters are generated
+- Fewer sequencing reads are produced
+
+If the concentration is too high:
+
+- Excessice DNA loads onto the flow cell
+- Clusters overlap
+- Sequencing accuracy decreases.
+
+Therefore, an optimal DNA concentration is essential.
+
+## Measuring Library Concentration
+
+Common methods include:
+
+- Qubit Fluorometer
+- Quantitative PCR (qPCR)
+
+Qubit measures the amount of double-stranded DNA using fluorescent dyes.
+
+Libraby qPCR estimates the number of sequenceable DNA molecules and is often the most accurate method for determining the concentration used for sequencing.
+
+Although qPCR is commonly used for measuring gene expression after reverse transcription (qRT-PCR), it can also be used during library preparation to accurately quantify sequencing libraries before they are loaded onto the sequencing instrument.
+
+---
+
+# 2 Fragment size distribution
+
+After fragmentation and adapter ligation, DNA fragments should fall within a specific size range.
+
+Scientists therefore examine the size distribution of all library fragments.
+
+A good library contains fragments that are relatively uniform in size.
+
+Very short or very long fragments may reduce sequencing efficiency.
+
+## Instruments Used
+
+Fragment size is commonly measured using:
+
+- Agilent Bioanalyzer
+- Agilent TapeStation
+- Fragment Analyzer
+
+These instruments separate DNA fragments according to size and generate an electropherogram shwoing the fragment distribution.
+
+## What is Electropherogram?
+
+An electropherogram is a graph showing the distribution of DNA fragment size in the sequencing library.
+
+X-axis:
+
+Fragment size (base pairs)
+
+Y-axis:
+
+Fluorescence intensity
+
+Each peak represents DNA fragments of a particular size.
+
+Scientists expect a smooth peak centered around the target fragment size.
+
+---
+
+# 3. Adapter Dimers
+
+Sometimes sequencing adapters attach to each other instead of attaching to DNA fragments.
+
+These small molecules are called **adapter dimers**.
+
+Because they are much shorter than normal library fragments, they can consume sequencing capacity without providing useful biological information.
+
+Libraries containing many adapter dimers should be cleaned before sequencing.
+
+---
+
+# 4. Library Purity
+
+The sequencing library should contain only the intended DNA fragments.
+
+Contaminants such as:
+
+- leftover primets
+- enzymes
+- salts
+- adapter dimers
+
+can interface with sequencing and reduce data quality.
+
+Purification steps are performed to remove these contaminants before sequencing.
+
+---
+
+# 5. Overall library integrity
+
+Scientists evaluate all QC measurements together before deciding whether the library is ready for sequencing.
+
+A high-quality sequencing library should have:
+
+- correct DNA concentration
+- expected fragment size
+- minimal adapter dimers
+- high purity
+- consistent fragment distribution
+
+Only libraries that pass quality control proceed to sequencing.
